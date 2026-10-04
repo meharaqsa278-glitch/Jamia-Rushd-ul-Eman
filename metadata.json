@@ -1,0 +1,6 @@
+{
+  "name": "Jamia Rushd-ul-Eman Wa Education Center",
+  "description": "Official portal for Jamia Rushd-ul-Eman Wa Education Center (جامعہ رشد الایمان و ایجوکیشن سینٹر) offering free Islamic education and modern technical skills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
