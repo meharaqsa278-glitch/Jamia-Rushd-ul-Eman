@@ -11,6 +11,7 @@ import { AdmissionForm } from './components/AdmissionForm';
 import { ContactSection } from './components/ContactSection';
 import { LibrarySection } from './components/LibrarySection';
 import { DarulIftaSection } from './components/DarulIftaSection';
+import { GallerySection } from './components/GallerySection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
@@ -116,7 +117,16 @@ export default function App() {
           />
         </div>
 
-        {/* 5. HIKMA Society Tab */}
+        {/* 6. Gallery Tab (Uploaded Campus Building & Hallway Photos) */}
+        <div
+          id="section-gallery"
+          style={{ display: activeSection === 'gallery' ? 'block' : 'none' }}
+          className={activeSection === 'gallery' ? 'block animate-in fade-in duration-200' : 'hidden'}
+        >
+          <GallerySection />
+        </div>
+
+        {/* 7. HIKMA Society Tab */}
         <div
           id="section-hikma"
           style={{ display: activeSection === 'hikma' ? 'block' : 'none' }}

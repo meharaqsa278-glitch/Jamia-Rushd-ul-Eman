@@ -42,35 +42,6 @@ interface FacultyMember {
 
 const FACULTY_MEMBERS: FacultyMember[] = [
   {
-    id: 'hammad-qadri',
-    nameEn: 'Sir Muhammad Hammad Qadri',
-    nameUrdu: 'سر محمد حماد قادری (ماہر نفسیات)',
-    designationEn: 'Patron-in-Chief & Senior Educational Psychologist',
-    designationUrdu: 'سرپرستِ اعلیٰ و ماہرِ نفسیات و رہنمائی',
-    department: 'leadership',
-    qualificationEn: 'M.Sc. Applied Psychology, Behavioral Counselor & Pedagogical Strategist',
-    qualificationUrdu: 'ایم ایس سی اپلائیڈ سائیکالوجی، ماہرِ نفسیات و تربیت',
-    experienceEn: '15+ Years in Psychological Counseling & Youth Mentorship',
-    experienceUrdu: '15 سال سے زائد کونسلنگ و تربیتی تجربہ',
-    subjectsEn: [
-      'Applied Educational Psychology',
-      'Student Mental Health & Emotional Resilience',
-      'Personality Grooming & Public Speaking Confidence',
-      'Ethical Tarbiyah & Akhlaq'
-    ],
-    subjectsUrdu: [
-      'تعلیمی نفسیات و ذہنی صحت',
-      'خود اعتمادی اور اسٹیج فیئر کا خاتمہ',
-      'طلبہ کی انفرادی اخلاقی و فکری تربیت',
-      'سیرت النبی ﷺ کی روشنی میں کردار سازی'
-    ],
-    bioEn: 'Spearheading the holistic vision of Jamia Rushd-ul-Eman & Education Center, Sir Muhammad Hammad Qadri provides dedicated counseling that overcomes academic anxiety, builds character, and bridges classical Islamic wisdom with modern cognitive behavioral techniques.',
-    bioUrdu: 'جامعہ رشد الایمان و ایجوکیشن سینٹر کے سرپرستِ اعلیٰ ہیں۔ آپ طلبہ کی ذہنی صلاحیتوں کو نکھارنے، امتحانی خوف اور جھجھک دور کرنے اور باوقار اسلامی کردار کی تشکیل کے لیے ہمہ وقت رہنمائی فراہم کرتے ہیں۔',
-    avatarBg: 'from-emerald-700 to-[#0A5C36]',
-    avatarIcon: 'BrainCircuit',
-    featured: true
-  },
-  {
     id: 'mufti-usman',
     nameEn: 'Mufti Hafiz Muhammad Usman Qadri',
     nameUrdu: 'مفتی حافظ محمد عثمان قادری',
@@ -239,9 +210,9 @@ const FACULTY_MEMBERS: FacultyMember[] = [
     avatarIcon: 'Sparkles'
   },
   {
-    id: 'madam-ayesha',
-    nameEn: 'Chef Madam Ayesha Noor',
-    nameUrdu: 'محترمہ عائشہ نور (شیف)',
+    id: 'chef-haya-batool',
+    nameEn: 'Chef Haya Batool',
+    nameUrdu: 'شیف حیا بتول',
     designationEn: 'Master Instructor – Baking, Confectionery & Pastry Arts',
     designationUrdu: 'ماہرِ بیکنگ و کنفیکشنری کورس انسٹرکٹر',
     department: 'vocational',
@@ -372,9 +343,6 @@ export const FacultySection: React.FC<FacultySectionProps> = ({ onApplyNow, onEx
               <div className="font-urdu text-sm font-semibold text-amber-200 mt-2">
                 ماہرِ نفسیات و سرپرستِ ادارہ
               </div>
-              <p className="text-xs text-emerald-200/80 font-sans-en">
-                M.Sc. Applied Psychology
-              </p>
             </div>
 
             {/* Right Information */}

@@ -38,6 +38,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection, onNavigate }) => 
     { id: 'darulifta', labelEn: 'Dar-ul-Ifta', labelUrdu: 'دار الافتاء' },
     { id: 'faculty', labelEn: 'Our Faculty', labelUrdu: 'عملہ' },
     { id: 'facilities', labelEn: 'Facilities', labelUrdu: 'سہولیات' },
+    { id: 'gallery', labelEn: 'Gallery', labelUrdu: 'تصویری گیلری' },
     { id: 'hikma', labelEn: 'HIKMA Society', labelUrdu: 'حکمہ سوسائٹی' },
     { id: 'international', labelEn: 'International Relations', labelUrdu: 'بین الاقوامی تعلقات' },
     { id: 'admission', labelEn: 'Online Admission', labelUrdu: 'آن لائن داخلہ' },
@@ -91,7 +92,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection, onNavigate }) => 
           </button>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex items-center space-x-0.5 xl:space-x-1">
+          <div className="hidden lg:flex items-center space-x-0.5 xl:space-x-1 flex-wrap justify-end gap-y-0.5">
             {primaryNavItems.map((item) => {
               const isActive = activeSection === item.id;
               return (

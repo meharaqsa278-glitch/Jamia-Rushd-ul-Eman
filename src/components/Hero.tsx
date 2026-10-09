@@ -1,6 +1,6 @@
 import React from 'react';
 import { INSTITUTION_INFO } from '../data/courses';
-import { BookOpen, UserCheck, CheckCircle2, ArrowRight, ShieldCheck, Sparkles, Building, Globe, Wind, GraduationCap, MapPin, Scale } from 'lucide-react';
+import { BookOpen, UserCheck, CheckCircle2, ArrowRight, ShieldCheck, Sparkles, Building, Globe, Wind, GraduationCap, MapPin, Scale, Camera } from 'lucide-react';
 
 interface HeroProps {
   onExploreCourses: () => void;
@@ -170,11 +170,20 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCourses, onApplyNow, onNavi
 
               <button
                 onClick={() => onNavigateTab('facilities')}
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-emerald-100 hover:text-white px-4 py-2 rounded-xl text-xs font-medium backdrop-blur-sm transition-all shadow-sm"
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-emerald-100 hover:text-white px-4 py-2 rounded-xl text-xs font-medium backdrop-blur-sm transition-all shadow-sm cursor-pointer"
               >
                 <Wind className="w-4 h-4 text-cyan-300" />
                 <span>Facilities (AC Classrooms & AI Labs)</span>
                 <span className="font-urdu text-[11px] text-amber-200">/ سہولیات</span>
+              </button>
+
+              <button
+                onClick={() => onNavigateTab('gallery')}
+                className="inline-flex items-center gap-2 bg-[#D4AF37]/20 hover:bg-[#D4AF37]/30 border border-[#D4AF37]/40 text-amber-200 hover:text-white px-4 py-2 rounded-xl text-xs font-semibold backdrop-blur-sm transition-all shadow-sm cursor-pointer"
+              >
+                <Camera className="w-4 h-4 text-amber-300" />
+                <span>Campus Gallery</span>
+                <span className="font-urdu text-[11px] text-amber-200">/ تصویری گیلری</span>
               </button>
 
               <button
