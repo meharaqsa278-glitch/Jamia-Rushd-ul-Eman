@@ -1,0 +1,27 @@
+name: Send Approval Email to Sir Hammad
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Email via Resend
+        env:
+          RESEND_KEY: ${{ secrets.RESEND_API_KEY }}
+          ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          AUTHOR: ${{ github.actor }}
+        run: |
+          curl -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer $RESEND_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "from": "onboarding@resend.dev",
+              "to": ["'"$ADMIN_EMAIL"'"],
+              "subject": "🔔 Jamia Website: Nayi Code Update Review Ke Liye Ready Hai",
+              "html": "<h3>Assalam-o-Alaikum Sir Hammad,</h3><p>Website ke code/design par nayi update push hui hai:</p><ul><li><b>Update Title:</b> '"$PR_TITLE"'</li><li><b>Pushed By:</b> '"$AUTHOR"'</li></ul><p><a href=\"'"$PR_URL"'\" style=\"background-color: #1a5f7a; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;\">GitHub Par Review Karein</a></p><p>Netlify Deploy Preview link bhi Pull Request ke andar automatic mil jayega.</p>"
+            }'
