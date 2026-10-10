@@ -59,6 +59,55 @@ export const galleryImages: GalleryItem[] = [
     titleEn: 'Main Hallway & Surveillance Corridor',
     titleUrdu: 'مین ہال و سی سی ٹی وی نگرانی',
   },
+  {
+    id: '6',
+    url: 'https://i.postimg.cc/DyLZ4nkB/center5.png',
+    fallbackUrl: '/gallery/center5.png',
+    titleEn: 'Campus Notice Board & Library Section',
+    titleUrdu: 'نوٹس بورڈ و کتب خانہ',
+  },
+  {
+    id: '7',
+    url: 'https://i.postimg.cc/VNLLhtSg/center6.jpg',
+    fallbackUrl: '/gallery/center6.jpg',
+    titleEn: 'Smart Classroom & Learning Environment',
+    titleUrdu: 'سمارٹ کلاس روم و تدریسی ہال',
+  },
+  {
+    id: '8',
+    url: 'https://i.postimg.cc/HxrWYC94/center7.png',
+    fallbackUrl: '/gallery/center7.png',
+    titleEn: 'Main Hallway & Classroom Access',
+    titleUrdu: 'داخلی راہداری و تدریسی راستے',
+  },
+  {
+    id: '9',
+    url: 'https://i.postimg.cc/d1gsDSWs/center8CC.png',
+    fallbackUrl: '/gallery/center8CC.png',
+    titleEn: 'Computer Lab Facility & Practical Workstations',
+    titleUrdu: 'کمپیوٹر لیب و پریکٹیکل ٹریننگ روم',
+  },
+  {
+    id: '10',
+    url: 'https://i.postimg.cc/pVnV3Rdw/center9.png',
+    fallbackUrl: '/gallery/center9.png',
+    titleEn: 'Multi-purpose Seminar Room & Hall',
+    titleUrdu: 'سیمینار روم و فکری نشست گاہ',
+  },
+  {
+    id: '11',
+    url: 'https://i.postimg.cc/MK76K5VD/center10.png',
+    fallbackUrl: '/gallery/center10.png',
+    titleEn: 'Security and CCTV Monitoring',
+    titleUrdu: 'سیکیورٹی و سی سی ٹی وی مانیٹرنگ',
+  },
+  {
+    id: '12',
+    url: 'https://i.postimg.cc/fRvYvsd2/center11.png',
+    fallbackUrl: '/gallery/center11.png',
+    titleEn: 'Rooftop Solar System',
+    titleUrdu: 'روف ٹاپ سولر سسٹم و شمسی توانائی',
+  },
 ];
 
 export const GallerySection: React.FC = () => {
