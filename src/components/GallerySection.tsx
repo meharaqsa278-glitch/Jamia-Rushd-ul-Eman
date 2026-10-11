@@ -57,7 +57,7 @@ export const galleryImages: GalleryItem[] = [
     url: 'https://i.postimg.cc/PJvgcXzS/center4.png',
     fallbackUrl: '/gallery/center4.png',
     titleEn: 'Main Hallway & Surveillance Corridor',
-    titleUrdu: 'مین ہال و سی سی ٹی وی نگرانی',
+    titleUrdu: 'مین ہال ',
   },
   {
     id: '6',
